@@ -1,0 +1,211 @@
+# Query: BarookFit
+# ContextLines: 1
+
+59 results - 19 files
+
+pubspec.yaml:
+  1: name: BarookFit
+  2  description: A new Flutter project.
+
+README.md:
+  1: # barookfit
+  2  
+
+android/app/build.gradle.kts:
+   8  android {
+   9:     namespace = "com.example.barookfit"
+  10      compileSdk = flutter.compileSdkVersion
+
+  23          // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+  24:         applicationId = "com.example.barookfit"
+  25          // You can update the following values to match your application needs.
+
+android/app/src/main/AndroidManifest.xml:
+  2      <application
+  3:         android:label="BarookFit"
+  4          android:name="${applicationName}"
+
+android/app/src/main/kotlin/com/example/barookfit/MainActivity.kt:
+  1: package com.example.barookfit
+  2  
+
+ios/Runner/Info.plist:
+   7  	<key>CFBundleDisplayName</key>
+   8: 	<string>Barookfit</string>
+   9  	<key>CFBundleExecutable</key>
+
+  15  	<key>CFBundleName</key>
+  16: 	<string>barookfit</string>
+  17  	<key>CFBundlePackageType</key>
+
+ios/Runner.xcodeproj/project.pbxproj:
+  371  				);
+  372: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit;
+  373  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+  387  				MARKETING_VERSION = 1.0;
+  388: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  389  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+  404  				MARKETING_VERSION = 1.0;
+  405: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  406  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+  419  				MARKETING_VERSION = 1.0;
+  420: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  421  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+  551  				);
+  552: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit;
+  553  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+  574  				);
+  575: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit;
+  576  				PRODUCT_NAME = "$(TARGET_NAME)";
+
+lib/main.dart:
+    4  void main() {
+    5:   runApp(const BarookFitApp());
+    6  }
+    7  
+    8: class BarookFitApp extends StatefulWidget {
+    9:   const BarookFitApp({Key? key}) : super(key: key);
+   10  
+   11    @override
+   12:   State<BarookFitApp> createState() => _BarookFitAppState();
+   13  }
+   14  
+   15: class _BarookFitAppState extends State<BarookFitApp> {
+   16    bool isDarkMode = true;
+
+   26      return MaterialApp(
+   27:       title: 'BarookFit',
+   28        debugShowCheckedModeBanner: false,
+
+  214                            child: Text(
+  215:                             'BarookFit',
+  216                              style: TextStyle(
+
+linux/CMakeLists.txt:
+   6  # the on-disk name of your application.
+   7: set(BINARY_NAME "barookfit")
+   8  # The unique GTK application identifier for this application. See:
+   9  # https://wiki.gnome.org/HowDoI/ChooseApplicationID
+  10: set(APPLICATION_ID "com.example.barookfit")
+  11  
+
+linux/runner/my_application.cc:
+  42      gtk_widget_show(GTK_WIDGET(header_bar));
+  43:     gtk_header_bar_set_title(header_bar, "barookfit");
+  44      gtk_header_bar_set_show_close_button(header_bar, TRUE);
+
+  46    } else {
+  47:     gtk_window_set_title(window, "barookfit");
+  48    }
+
+macos/Runner/Configs/AppInfo.xcconfig:
+   7  // The application's name. By default this is also the title of the Flutter window.
+   8: PRODUCT_NAME = barookfit
+   9  
+  10  // The application's bundle identifier
+  11: PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit
+  12  
+
+macos/Runner.xcodeproj/project.pbxproj:
+   66  		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
+   67: 		33CC10ED2044A3C60003C045 /* barookfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "barookfit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+   68  		33CC10F02044A3C60003C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
+  133  			children = (
+  134: 				33CC10ED2044A3C60003C045 /* barookfit.app */,
+  135  				331C80D5294CF71000263BE5 /* RunnerTests.xctest */,
+
+  219  			productName = Runner;
+  220: 			productReference = 33CC10ED2044A3C60003C045 /* barookfit.app */;
+  221  			productType = "com.apple.product-type.application";
+
+  387  				MARKETING_VERSION = 1.0;
+  388: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  389  				PRODUCT_NAME = "$(TARGET_NAME)";
+  390  				SWIFT_VERSION = 5.0;
+  391: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/barookfit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/barookfit";
+  392  			};
+
+  401  				MARKETING_VERSION = 1.0;
+  402: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  403  				PRODUCT_NAME = "$(TARGET_NAME)";
+  404  				SWIFT_VERSION = 5.0;
+  405: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/barookfit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/barookfit";
+  406  			};
+
+  415  				MARKETING_VERSION = 1.0;
+  416: 				PRODUCT_BUNDLE_IDENTIFIER = com.example.barookfit.RunnerTests;
+  417  				PRODUCT_NAME = "$(TARGET_NAME)";
+  418  				SWIFT_VERSION = 5.0;
+  419: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/barookfit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/barookfit";
+  420  			};
+
+macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme:
+  17                 BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  18:                BuildableName = "barookfit.app"
+  19                 BlueprintName = "Runner"
+
+  33              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  34:             BuildableName = "barookfit.app"
+  35              BlueprintName = "Runner"
+
+  68              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  69:             BuildableName = "barookfit.app"
+  70              BlueprintName = "Runner"
+
+  85              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  86:             BuildableName = "barookfit.app"
+  87              BlueprintName = "Runner"
+
+test/widget_test.dart:
+  10  
+  11: import 'package:barookfit/main.dart';
+  12  
+
+  15      // Build our app and trigger a frame.
+  16:     await tester.pumpWidget(const BarookFitApp());
+  17  
+
+web/index.html:
+  25    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  26:   <meta name="apple-mobile-web-app-title" content="barookfit">
+  27    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  31  
+  32:   <title>barookfit</title>
+  33    <link rel="manifest" href="manifest.json">
+
+web/manifest.json:
+  1  {
+  2:     "name": "barookfit",
+  3:     "short_name": "barookfit",
+  4      "start_url": ".",
+
+windows/CMakeLists.txt:
+  2  cmake_minimum_required(VERSION 3.14)
+  3: project(barookfit LANGUAGES CXX)
+  4  
+
+  6  # the on-disk name of your application.
+  7: set(BINARY_NAME "barookfit")
+  8  
+
+windows/runner/main.cpp:
+  29    Win32Window::Size size(1280, 720);
+  30:   if (!window.Create(L"barookfit", origin, size)) {
+  31      return EXIT_FAILURE;
+
+windows/runner/Runner.rc:
+  92              VALUE "CompanyName", "com.example" "\0"
+  93:             VALUE "FileDescription", "barookfit" "\0"
+  94              VALUE "FileVersion", VERSION_AS_STRING "\0"
+  95:             VALUE "InternalName", "barookfit" "\0"
+  96              VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
+  97:             VALUE "OriginalFilename", "barookfit.exe" "\0"
+  98:             VALUE "ProductName", "barookfit" "\0"
+  99              VALUE "ProductVersion", VERSION_AS_STRING "\0"
